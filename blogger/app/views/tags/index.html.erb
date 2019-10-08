@@ -1,0 +1,12 @@
+<h1>Browse tags</h1>
+<ul>
+  <% @tags.each do |tag| %>
+    <li>
+      <%= link_to("Delete", tag_path(tag), method: :delete, data: {confirm:
+        "Permanently delete the tag '#{tag.name}'?"}) %>
+      <%= link_to(tag.name, tag_path(tag)) %>
+    </li>
+  <% end %>
+</ul>
+</br>
+<%= link_to("Back to articles", articles_path) %>
