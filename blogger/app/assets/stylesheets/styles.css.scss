@@ -15,6 +15,12 @@ a {
   }
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  text-align: center;
+}
+
 .clear {
   clear: both;
   height: 0;
